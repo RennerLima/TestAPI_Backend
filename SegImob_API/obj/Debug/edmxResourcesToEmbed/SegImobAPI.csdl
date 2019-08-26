@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ESTUDOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBL_PRODUTO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NM_PRODUTO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FL_ATIVO" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ESTUDOEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_PRODUTO" EntityType="Self.TBL_PRODUTO" />
+  </EntityContainer>
+</Schema>

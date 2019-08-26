@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ESTUDOModelStoreContainer" CdmEntityContainer="ESTUDOEntities">
+    <EntitySetMapping Name="TBL_PRODUTO">
+      <EntityTypeMapping TypeName="ESTUDOModel.TBL_PRODUTO">
+        <MappingFragment StoreEntitySet="TBL_PRODUTO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NM_PRODUTO" ColumnName="NM_PRODUTO" />
+          <ScalarProperty Name="FL_ATIVO" ColumnName="FL_ATIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
